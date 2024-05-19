@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+input {
+  font-family: "Poppins", sans-serif;
+  background-color: #1F1A17;
+  margin-bottom: 60px;
+}
+.bottom-nav {
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #2D2120; /* Change the background color as needed */
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+    padding: 10px 0;
+    z-index: 10;
+  }
+  
+  .nav-item {
+    text-align: center;
+  }
+  
+  .nav-item i {
+    font-size: 20px; /* Adjust icon size as needed */
+    color: #D6C1B9;
+  }
+
+  .nav-item i, .nav-item span {
+    transition: color 0.3s ease;
+}
+
+.nav-item:hover i, .nav-item:hover span {
+    color: #f4f1ef;
+}
+  
+  .nav-item span {
+    display: block;
+    font-size: 12px; /* Adjust text size as needed */
+    color: #918180;
+  }
+
+
+  /* Style for the total cash container */
+#total-cash-container {
+    margin: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #7A2F0E; /* White background for better readability */
+    border: 1px solid #785757;
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners for a softer look */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+  }
+  
+  /* Style for each total cash entry */
+  #total-cash-container div {
+    margin: 5px 0;
+    padding: 5px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+  }
+
+  #total-cash-container div:hover {
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2); /* Enhanced shadow on hover */
+    transform: translateY(-5px); /* Slight raise effect on hover */
+  }
+  
+  #total-cash-container div{
+    background: rgba(110, 92, 86, 0.75);
+    color: #e0e0e0;
+    padding: 10px 20px;
+    margin: 10px 0;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Ensures content is spaced out to the edges */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+  }
+  .tenant-info li:hover {
+    background-color: rgba(84, 68, 62, 0.85); /* Darker background on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+  }
+
+  h3{
+    color: #e0e0e0;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 40px;
+  }
+ 
+  .delete-cash-entry-btn {
+    padding: 5px 10px;
+    font-size: 14px;
+    color: white;
+    background-color: #ff4d4d; /* Red color for delete button */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.delete-cash-entry-btn:hover {
+    background-color: #ff3333; /* Darker red on hover */
+}
+
+.total-cash-entry {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f9f9f9;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.delete-cash-btn {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.delete-cash-btn:hover {
+  background-color: #ff1a1a;
+}
+#clear-all-data-btn {
+  background: linear-gradient(to right, #ff7e5f, #feb47b); /* Gradient background */
+  color: white; /* White text color */
+  border: none; /* No border */
+  padding: 10px 20px; /* Padding around the text */
+  font-size: 16px; /* Text size */
+  cursor: pointer; /* Cursor indicates it's clickable */
+  border-radius: 5px; /* Rounded corners */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+  outline: none; /* Remove outline */
+  margin-left: 135px;
+  margin-top: 80px;
+}
+
+#clear-all-data-btn:hover {
+  transform: translateY(-2px); /* Slight raise effect on hover */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Shadow effect for depth */
+}
+
+#clear-all-data-btn:active {
+  transform: translateY(1px); /* Slight press-down effect when active */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Less shadow when pressed */
+}
